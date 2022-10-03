@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+    postgres-trader:
+        image: postgres
+        environment:
+            - POSTGRES_DB=trader_db
+            - POSTGRES_USER=proquality
+            - POSTGRES_PASSWORD=password123
+#            - POSTGRES_SCHEMA=trader
+        ports:
+            - '5432:5432'
+        volumes:
+            - ./scripts/init_trader_db/schema.sql:/docker-entrypoint-initdb.d/1.sql
+
+    zookeeper-trader:
+        image: wurstmeister/zookeeper
+        container_name: zookeeper
+        ports:
+            - "2181:2181"
+    kafka-trader:
+        image: wurstmeister/kafka
+        container_name: kafka
+        ports:
+            - "9092:9092"
+        environment:
+            KAFKA_ADVERTISED_HOST_NAME: localhost
+            KAFKA_CREATE_TOPICS: "updateStockPrice:1:1,updateUserBalance:1:1"
+            KAFKA_ZOOKEEPER_CONNECT: zookeeper-trader:2181
+            KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+            KAFKA_ADVERTISED_LISTENERS: "PLAINTEXT://${DOCKER_VM_IP:-localhost}:9092"
+        depends_on:
+            - zookeeper-trader
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock

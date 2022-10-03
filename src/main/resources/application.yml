@@ -1,0 +1,38 @@
+server:
+  port: 8085
+
+spring:
+  profiles:
+    include:
+      - core
+  application:
+    name: trader
+  datasource:
+    url: jdbc:postgresql://192.168.59.100:5432/trader_db?currentSchema=trader&stringtype=unspecified
+    password: ${POSTGRES_PASSWORD}
+    username: ${POSTGRES_USERNAME}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      maximum-pool-size: 5
+
+  #Liquibase
+  liquibase:
+    change-log: classpath:/db/liquibase-setup.json
+    enabled: true
+
+  kafka:
+    update-stock-price:
+      topic: updateStockPrice
+    update-user-balance:
+      topic: updateUserBalance
+    producer:
+      bootstrap-servers: ${KAFKA_BROKER}
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+icecat:
+  client:
+    url: "http://localhost:8089"

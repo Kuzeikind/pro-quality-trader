@@ -1,0 +1,21 @@
+{
+  "databaseChangeLog" : [
+    {
+      "changeSet": {
+        "id" : "001-schema",
+        "author" : "proquality",
+        "changes" : [
+          {
+            "sqlFile" : {
+              "dbms" : "postgresql",
+              "encoding" : "utf8",
+              "path" : "ddl-schema.sql",
+              "relativeToChangelogFile" : true,
+              "stripComments": true
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
