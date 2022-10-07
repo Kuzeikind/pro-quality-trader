@@ -8,13 +8,17 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
+import lombok.experimental.Accessors;
 
 @Entity
 @Table(name = "stocks", schema = "trader")
 @EqualsAndHashCode(of = "id")
 @ToString
 @Getter
+@Setter
+@Accessors(chain = true)
 public class Stock {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

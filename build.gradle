@@ -12,7 +12,7 @@ ext {
     feignClientVersion = '1.4.7.RELEASE'
     wiremockVersion='2.27.2'
     testContainersVersion='1.17.1'
-    restAssuredVersion = '5.0.1'¯
+    restAssuredVersion = '5.0.1'
     cucumberVersion = '7.2.3'
     assertJVersion = '3.22.0'
 }
@@ -33,9 +33,12 @@ sourceSets {
 }
 
 configurations {
+//    testImplementation.extendsFrom implementaion
+
     testArchitectureImplementation.extendsFrom testImplementation
     testArchitectureRuntime.extendsFrom testArchitectureImplementation
     testArchitectureAnnotationProcessor.extendsFrom annotationProcessor
+    testArchitectureCompileOnly.extendsFrom compileOnly
 }
 
 dependencies {

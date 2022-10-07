@@ -13,7 +13,7 @@ public class KafkaContainerInitializer implements ApplicationContextInitializer<
     private static String KAFKA_IMAGE = "confluentinc/cp-kafka:7.0.1";
 
     @Container
-    public static final KafkaContainer KAFKA_CONTAINER = new KafkaContainer(
+    private static final KafkaContainer KAFKA_CONTAINER = new KafkaContainer(
         parse(KAFKA_IMAGE).asCompatibleSubstituteFor("confluentinc/cp-kafka"));
 
     @Override
@@ -25,4 +25,9 @@ public class KafkaContainerInitializer implements ApplicationContextInitializer<
             "KAFKA_BROKER=" + kafkaBootstrapServers
         ).applyTo(applicationContext.getEnvironment());
     }
+
+    public static String getKafkaBootstrapServers() {
+        return KAFKA_CONTAINER.getBootstrapServers();
+    }
+
 }

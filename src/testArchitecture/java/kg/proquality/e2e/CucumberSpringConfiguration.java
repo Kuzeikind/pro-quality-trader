@@ -14,7 +14,10 @@ import org.springframework.test.context.ContextConfiguration;
             KafkaContainerInitializer.class,
             PostgresContainerInitializer.class
         },
-        classes = {CucumberTestContextConfig.class, Application.class}
+        classes = {
+                CucumberTestContextConfig.class,
+                Application.class
+        }
 )
 public class CucumberSpringConfiguration {
 }

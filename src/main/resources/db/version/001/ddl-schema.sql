@@ -4,22 +4,24 @@ DROP TABLE IF EXISTS stocks CASCADE;
 DROP TABLE IF EXISTS user_has_stock CASCADE;
 
 CREATE TABLE users (
-    id INTEGER NOT NULL PRIMARY KEY,
+    id SERIAL NOT NULL PRIMARY KEY,
     email VARCHAR NOT NULL UNIQUE
 );
 
 CREATE TABLE stocks (
-    id INTEGER NOT NULL PRIMARY KEY,
+    id SERIAL NOT NULL PRIMARY KEY,
     ticker VARCHAR NOT NULL UNIQUE,
     sell_price DOUBLE PRECISION NOT NULL,
     buy_price DOUBLE PRECISION NOT NULL
 );
 
 CREATE TABLE user_has_stock (
-    user_id INTEGER NOT NULL REFERENCES users(id),
-    stock_id INTEGER NOT NULL REFERENCES stocks(id),
+    user_id INTEGER NOT NULL,
+    stock_id INTEGER NOT NULL,
     amount INTEGER NOT NULL,
-    CONSTRAINT user_has_stock_pk PRIMARY KEY (user_id, stock_id)
+    CONSTRAINT user_has_stock_pk PRIMARY KEY (user_id, stock_id),
+    CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES users(id),
+    CONSTRAINT fk_stock_id FOREIGN KEY (stock_id) REFERENCES stocks(id)
 );
 
 INSERT INTO users VALUES

@@ -20,6 +20,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import lombok.experimental.Accessors;
 import org.hibernate.annotations.Fetch;
 
 @Entity
@@ -28,6 +29,7 @@ import org.hibernate.annotations.Fetch;
 @ToString
 @Getter
 @Setter
+@Accessors(chain = true)
 public class User {
 
     @Id

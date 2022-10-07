@@ -57,7 +57,7 @@ public class StockOperationService {
 
     private Double checkIfUserHasMoney(User user, Stock stock, Integer amountToBuy) {
         Double userBalance =
-            userBalanceClient.getUserBalance(new UserBalanceRequestDto().setUserId(user.getId())).getUserBalance();
+            userBalanceClient.getUserBalance(user.getId()).getBody().getUserBalance();
 
         Double requiredCash = stock.getBuyPrice() * amountToBuy;
 

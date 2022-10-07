@@ -33,6 +33,6 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
-icecat:
-  client:
-    url: "http://localhost:8089"
+user-balance-service:
+  host: "localhost"
+  port: 8089

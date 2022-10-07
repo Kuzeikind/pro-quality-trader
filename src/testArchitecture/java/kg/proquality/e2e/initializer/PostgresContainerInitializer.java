@@ -20,7 +20,7 @@ public class PostgresContainerInitializer implements ApplicationContextInitializ
     private static final String PASSWORD = "admin";
 
     @Container
-    public static final PostgreSQLContainer<?> POSTGRES_CONTAINER = new PostgreSQLContainer<>(
+    private static final PostgreSQLContainer<?> POSTGRES_CONTAINER = new PostgreSQLContainer<>(
         parse(POSTGRES_IMAGE).asCompatibleSubstituteFor("postgres"))
         .withDatabaseName(DATABASE_NAME)
         .withInitScript(INIT_SCRIPT_PATH)
@@ -41,5 +41,17 @@ public class PostgresContainerInitializer implements ApplicationContextInitializ
             "POSTGRES_USERNAME=" + username,
             "POSTGRES_PASSWORD=" + password
         ).applyTo(applicationContext.getEnvironment());
+    }
+
+    public static String getJdbcUrl() {
+        return POSTGRES_CONTAINER.getJdbcUrl();
+    }
+
+    public static String getPostgresUsername() {
+        return POSTGRES_CONTAINER.getUsername();
+    }
+
+    public static String getPostgresPassword() {
+        return POSTGRES_CONTAINER.getPassword();
     }
 }

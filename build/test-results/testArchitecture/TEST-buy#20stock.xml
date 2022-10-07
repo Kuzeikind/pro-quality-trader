@@ -1,19 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="buy stock" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-02T17:57:52" hostname="EPRUPETW1191" time="25.129">
+<testsuite name="buy stock" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-10-07T07:29:49" hostname="EPRUPETW1191" time="19.652">
   <properties/>
-  <testcase name="" classname="buy stock" time="25.129"/>
-  <system-out><![CDATA[23:57:52.953 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-23:57:52.966 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-23:57:53.000 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [kg.proquality.e2e.CucumberSpringConfiguration] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-23:57:53.016 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [kg.proquality.e2e.CucumberSpringConfiguration]: class path resource [kg/proquality/e2e/CucumberSpringConfiguration-context.xml] does not exist
-23:57:53.017 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [kg.proquality.e2e.CucumberSpringConfiguration]: class path resource [kg/proquality/e2e/CucumberSpringConfigurationContext.groovy] does not exist
-23:57:53.017 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [kg.proquality.e2e.CucumberSpringConfiguration]: no resource found for suffixes {-context.xml, Context.groovy}.
-23:57:53.062 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [kg.proquality.e2e.CucumberSpringConfiguration]
-23:57:53.169 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [kg.proquality.e2e.CucumberSpringConfiguration]: using defaults.
-23:57:53.170 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-23:57:53.186 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3359c978, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7ba63fe5, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@73386d72, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6f330eb9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@125c082e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@584f5497, org.springframework.test.context.transaction.TransactionalTestExecutionListener@68ace111, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1f9d6c7b, org.springframework.test.context.event.EventPublishingTestExecutionListener@6df20ade, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4fbb001b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4010d494, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@341a8659, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4943defe, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5eefa415, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@181d7f28]
-23:57:53.239 [Test worker] DEBUG org.testcontainers.utility.TestcontainersConfiguration - Testcontainers configuration overrides will be loaded from file:/Users/Nikolai_Kuzeikin/.testcontainers.properties
-23:57:53.246 [Test worker] INFO org.testcontainers.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+  <testcase name="buy stock with sufficient cash" classname="buy stock" time="19.652">
+    <failure message="java.lang.IllegalStateException: Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at io.cucumber.spring.TestContextAdaptor.createTestContextManagerAdaptor(TestContextAdaptor.java:40)
+	at io.cucumber.spring.SpringFactory.start(SpringFactory.java:154)
+	at io.cucumber.core.runner.Runner.buildBackendWorlds(Runner.java:134)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:70)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'postgresClient': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Could not add cascade delete
+	at app//org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:160)
+	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440)
+	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at app//org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at app//org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at app//org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at app//org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at app//org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at app//org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at app//org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at app//org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at app//org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at app//org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at app//org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at app//org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at app//org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at app//org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 56 more
+Caused by: java.lang.IllegalStateException: Could not add cascade delete
+	at kg.proquality.e2e.db.PostgresClient.addCascadeDelete(PostgresClient.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	... 74 more
+Caused by: org.postgresql.util.PSQLException: ERROR: relation &quot;trader.users&quot; does not exist
+	at app//org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at app//org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at app//org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at app//org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at app//org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at app//org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:329)
+	at app//org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:315)
+	at app//org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:291)
+	at app//org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:265)
+	at app//kg.proquality.e2e.db.PostgresClient.addCascadeDelete(PostgresClient.java:28)
+	... 81 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[13:29:49.847 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+13:29:49.859 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+13:29:49.890 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [kg.proquality.e2e.CucumberSpringConfiguration] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+13:29:49.902 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [kg.proquality.e2e.CucumberSpringConfiguration]: class path resource [kg/proquality/e2e/CucumberSpringConfiguration-context.xml] does not exist
+13:29:49.903 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [kg.proquality.e2e.CucumberSpringConfiguration]: class path resource [kg/proquality/e2e/CucumberSpringConfigurationContext.groovy] does not exist
+13:29:49.903 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [kg.proquality.e2e.CucumberSpringConfiguration]: no resource found for suffixes {-context.xml, Context.groovy}.
+13:29:49.940 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [kg.proquality.e2e.CucumberSpringConfiguration]
+13:29:50.033 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [kg.proquality.e2e.CucumberSpringConfiguration]: using defaults.
+13:29:50.034 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+13:29:50.056 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6c000e0c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5f233b26, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@44f9779c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6974a715, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5e8a459, org.springframework.test.context.support.DirtiesContextTestExecutionListener@43d455c9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4c9e9fb8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@9ec531, org.springframework.test.context.event.EventPublishingTestExecutionListener@40147317, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@210f0cc1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@19542407, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6f95cd51, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@c7a977f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@55caeb35, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6d868997]
+13:29:50.098 [Test worker] DEBUG org.testcontainers.utility.TestcontainersConfiguration - Testcontainers configuration overrides will be loaded from file:/Users/Nikolai_Kuzeikin/.testcontainers.properties
+13:29:50.102 [Test worker] INFO org.testcontainers.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -23,56 +126,159 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.6.3)
 
-2022-10-02 23:57:54.677  INFO 77488 --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with Environment variables, system properties and defaults. Resolved dockerHost=tcp://192.168.59.100:2376
-2022-10-02 23:57:54.678  INFO 77488 --- [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is 192.168.59.100
-2022-10-02 23:57:54.727  INFO 77488 --- [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+2022-10-07 13:29:51.356  INFO 24034 --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with Environment variables, system properties and defaults. Resolved dockerHost=tcp://192.168.59.100:2376
+2022-10-07 13:29:51.357  INFO 24034 --- [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is 192.168.59.100
+2022-10-07 13:29:51.392  INFO 24034 --- [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
   Server Version: 20.10.12
   API Version: 1.41
   Operating System: Buildroot 2021.02.4
   Total Memory: 5812 MB
-2022-10-02 23:57:55.595  INFO 77488 --- [    Test worker] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
-2022-10-02 23:57:55.596  INFO 77488 --- [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
-2022-10-02 23:57:55.596  INFO 77488 --- [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
-2022-10-02 23:57:55.922  INFO 77488 --- [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker environment should have more than 2GB free disk space
-2022-10-02 23:57:55.924  INFO 77488 --- [    Test worker] ]]>&#x1f433;<![CDATA[ [confluentinc/cp-kafka:7.0.1]         : Creating container for image: confluentinc/cp-kafka:7.0.1
-2022-10-02 23:57:56.030  INFO 77488 --- [    Test worker] ]]>&#x1f433;<![CDATA[ [confluentinc/cp-kafka:7.0.1]         : Container confluentinc/cp-kafka:7.0.1 is starting: af222167f95b40994dfe07655c046a38d4a687a9dbbdde1889b4e09c664bf612
-2022-10-02 23:58:05.360  INFO 77488 --- [    Test worker] ]]>&#x1f433;<![CDATA[ [confluentinc/cp-kafka:7.0.1]         : Container confluentinc/cp-kafka:7.0.1 started in PT9.437529S
-2022-10-02 23:58:07.636  INFO 77488 --- [    Test worker] ]]>&#x1f433;<![CDATA[ [postgres:12-alpine]                  : Creating container for image: postgres:12-alpine
-2022-10-02 23:58:07.708  INFO 77488 --- [    Test worker] ]]>&#x1f433;<![CDATA[ [postgres:12-alpine]                  : Container postgres:12-alpine is starting: f022e4bbd814a616b4be0b99017dc8d9387c5a77d534dbb3edf4e21011964ea4
-2022-10-02 23:58:10.114  INFO 77488 --- [    Test worker] ]]>&#x1f433;<![CDATA[ [postgres:12-alpine]                  : Container postgres:12-alpine started in PT2.477448S
-2022-10-02 23:58:10.122  INFO 77488 --- [    Test worker] org.testcontainers.ext.ScriptUtils       : Executing database script from init_schema.sql
-2022-10-02 23:58:10.222  INFO 77488 --- [    Test worker] org.testcontainers.ext.ScriptUtils       : Executed database script from init_schema.sql in 100 ms.
-2022-10-02 23:58:10.229  INFO 77488 --- [    Test worker] k.p.e2e.CucumberSpringConfiguration      : Starting CucumberSpringConfiguration using Java 11.0.1 on EPRUPETW1191 with PID 77488 (started by Nikolai_Kuzeikin in /Users/Nikolai_Kuzeikin/Projects/pro-quality-trader)
-2022-10-02 23:58:10.230  INFO 77488 --- [    Test worker] k.p.e2e.CucumberSpringConfiguration      : The following profiles are active: core
-2022-10-02 23:58:11.400  INFO 77488 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-10-02 23:58:11.502  INFO 77488 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
-2022-10-02 23:58:12.641  INFO 77488 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-2022-10-02 23:58:12.656  INFO 77488 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-10-02 23:58:12.656  INFO 77488 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
-2022-10-02 23:58:12.799  INFO 77488 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-10-02 23:58:12.800  INFO 77488 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2310 ms
-2022-10-02 23:58:13.045  INFO 77488 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-10-02 23:58:13.089  INFO 77488 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-10-02 23:58:13.315  INFO 77488 --- [    Test worker] liquibase.database                       : Set default schema name to public
-2022-10-02 23:58:13.460  INFO 77488 --- [    Test worker] liquibase.lockservice                    : Successfully acquired change log lock
-2022-10-02 23:58:13.726  INFO 77488 --- [    Test worker] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
-2022-10-02 23:58:13.738  INFO 77488 --- [    Test worker] liquibase.changelog                      : Reading from public.databasechangelog
+2022-10-07 13:29:52.176  INFO 24034 --- [    Test worker] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2022-10-07 13:29:52.177  INFO 24034 --- [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+2022-10-07 13:29:52.178  INFO 24034 --- [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2022-10-07 13:29:52.500  INFO 24034 --- [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker environment should have more than 2GB free disk space
+2022-10-07 13:29:52.501  INFO 24034 --- [    Test worker] ]]>&#x1f433;<![CDATA[ [confluentinc/cp-kafka:7.0.1]         : Creating container for image: confluentinc/cp-kafka:7.0.1
+2022-10-07 13:29:52.594  INFO 24034 --- [    Test worker] ]]>&#x1f433;<![CDATA[ [confluentinc/cp-kafka:7.0.1]         : Container confluentinc/cp-kafka:7.0.1 is starting: e5d2c93a0133e201ef1b88c9e317b277d4d3519b4790f8cc7ea00e5bb9ad15bf
+2022-10-07 13:30:00.873  INFO 24034 --- [    Test worker] ]]>&#x1f433;<![CDATA[ [confluentinc/cp-kafka:7.0.1]         : Container confluentinc/cp-kafka:7.0.1 started in PT8.372426S
+2022-10-07 13:30:03.197  INFO 24034 --- [    Test worker] ]]>&#x1f433;<![CDATA[ [postgres:12-alpine]                  : Creating container for image: postgres:12-alpine
+2022-10-07 13:30:03.247  INFO 24034 --- [    Test worker] ]]>&#x1f433;<![CDATA[ [postgres:12-alpine]                  : Container postgres:12-alpine is starting: 66c99e8beeeb58d16778c8431f94f2166d9e0d5503bdedeecf927f3e5e988992
+2022-10-07 13:30:05.426  INFO 24034 --- [    Test worker] ]]>&#x1f433;<![CDATA[ [postgres:12-alpine]                  : Container postgres:12-alpine started in PT2.229018S
+2022-10-07 13:30:05.434  INFO 24034 --- [    Test worker] org.testcontainers.ext.ScriptUtils       : Executing database script from init_schema.sql
+2022-10-07 13:30:05.533  INFO 24034 --- [    Test worker] org.testcontainers.ext.ScriptUtils       : Executed database script from init_schema.sql in 99 ms.
+2022-10-07 13:30:05.541  INFO 24034 --- [    Test worker] k.p.e2e.CucumberSpringConfiguration      : Starting CucumberSpringConfiguration using Java 11.0.1 on EPRUPETW1191 with PID 24034 (started by Nikolai_Kuzeikin in /Users/Nikolai_Kuzeikin/Projects/pro-quality-trader)
+2022-10-07 13:30:05.541  INFO 24034 --- [    Test worker] k.p.e2e.CucumberSpringConfiguration      : The following profiles are active: core
+2022-10-07 13:30:06.317  INFO 24034 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-07 13:30:06.367  INFO 24034 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2022-10-07 13:30:06.976  INFO 24034 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-10-07 13:30:06.988  INFO 24034 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-07 13:30:06.988  INFO 24034 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-10-07 13:30:07.086  INFO 24034 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-07 13:30:07.086  INFO 24034 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1305 ms
+2022-10-07 13:30:07.229  INFO 24034 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-07 13:30:07.263  INFO 24034 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-07 13:30:07.430  INFO 24034 --- [    Test worker] liquibase.database                       : Set default schema name to public
+2022-10-07 13:30:07.532  INFO 24034 --- [    Test worker] liquibase.lockservice                    : Successfully acquired change log lock
+2022-10-07 13:30:07.683  INFO 24034 --- [    Test worker] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2022-10-07 13:30:07.689  INFO 24034 --- [    Test worker] liquibase.changelog                      : Reading from public.databasechangelog
 Running Changeset: /db/version/001/setup.json::001-schema::proquality
-2022-10-02 23:58:13.869  INFO 77488 --- [    Test worker] liquibase.changelog                      : SQL in file ddl-schema.sql executed
-2022-10-02 23:58:13.871  INFO 77488 --- [    Test worker] liquibase.changelog                      : ChangeSet /db/version/001/setup.json::001-schema::proquality ran successfully in 66ms
-2022-10-02 23:58:13.884  INFO 77488 --- [    Test worker] liquibase.lockservice                    : Successfully released change log lock
-2022-10-02 23:58:14.176  INFO 77488 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-10-02 23:58:14.274  INFO 77488 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
-2022-10-02 23:58:14.537  INFO 77488 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-10-02 23:58:14.743  INFO 77488 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-10-02 23:58:15.638  INFO 77488 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-10-02 23:58:15.649  INFO 77488 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-10-02 23:58:16.426  WARN 77488 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-10-02 23:58:17.731  INFO 77488 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-2022-10-02 23:58:17.750  INFO 77488 --- [    Test worker] k.p.e2e.CucumberSpringConfiguration      : Started CucumberSpringConfiguration in 24.489 seconds (JVM running for 25.779)
-given
-when
-then
+2022-10-07 13:30:07.769  INFO 24034 --- [    Test worker] liquibase.changelog                      : SQL in file ddl-schema.sql executed
+2022-10-07 13:30:07.770  INFO 24034 --- [    Test worker] liquibase.changelog                      : ChangeSet /db/version/001/setup.json::001-schema::proquality ran successfully in 40ms
+2022-10-07 13:30:07.778  INFO 24034 --- [    Test worker] liquibase.lockservice                    : Successfully released change log lock
+2022-10-07 13:30:07.951  INFO 24034 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-07 13:30:08.037  INFO 24034 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-10-07 13:30:08.311  INFO 24034 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-07 13:30:08.491  INFO 24034 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-10-07 13:30:09.299  INFO 24034 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-07 13:30:09.314  INFO 24034 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-07 13:30:09.376  WARN 24034 --- [    Test worker] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'postgresClient': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Could not add cascade delete
+2022-10-07 13:30:09.377  INFO 24034 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-07 13:30:09.379  INFO 24034 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-07 13:30:09.384  INFO 24034 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-07 13:30:09.386  INFO 24034 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-07 13:30:09.399  INFO 24034 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-07 13:30:09.424 ERROR 24034 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'postgresClient': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Could not add cascade delete
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:160) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136) ~[spring-boot-test-2.6.3.jar:2.6.3]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.15.jar:5.3.15]
+	at io.cucumber.spring.TestContextAdaptor.createTestContextManagerAdaptor(TestContextAdaptor.java:40) ~[cucumber-spring-7.2.3.jar:7.2.3]
+	at io.cucumber.spring.SpringFactory.start(SpringFactory.java:154) ~[cucumber-spring-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runner.Runner.buildBackendWorlds(Runner.java:134) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:70) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151) ~[cucumber-junit-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148) ~[cucumber-junit-7.2.3.jar:7.2.3]
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144) ~[cucumber-junit-7.2.3.jar:7.2.3]
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28) ~[cucumber-junit-7.2.3.jar:7.2.3]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137) ~[cucumber-junit-7.2.3.jar:7.2.3]
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196) ~[cucumber-junit-7.2.3.jar:7.2.3]
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89) ~[cucumber-junit-7.2.3.jar:7.2.3]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266) ~[cucumber-junit-7.2.3.jar:7.2.3]
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281) ~[cucumber-junit-7.2.3.jar:7.2.3]
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233) ~[cucumber-junit-7.2.3.jar:7.2.3]
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248) ~[cucumber-junit-7.2.3.jar:7.2.3]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71) ~[na:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+Caused by: java.lang.IllegalStateException: Could not add cascade delete
+	at kg.proquality.e2e.db.PostgresClient.addCascadeDelete(PostgresClient.java:30) ~[testArchitecture/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 74 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "trader.users" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676) ~[postgresql-42.4.1.jar:42.4.1]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366) ~[postgresql-42.4.1.jar:42.4.1]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356) ~[postgresql-42.4.1.jar:42.4.1]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490) ~[postgresql-42.4.1.jar:42.4.1]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408) ~[postgresql-42.4.1.jar:42.4.1]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:329) ~[postgresql-42.4.1.jar:42.4.1]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:315) ~[postgresql-42.4.1.jar:42.4.1]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:291) ~[postgresql-42.4.1.jar:42.4.1]
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:265) ~[postgresql-42.4.1.jar:42.4.1]
+	at kg.proquality.e2e.db.PostgresClient.addCascadeDelete(PostgresClient.java:28) ~[testArchitecture/:na]
+	... 81 common frames omitted
+
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
