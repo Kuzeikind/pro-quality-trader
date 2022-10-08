@@ -9,7 +9,7 @@ import lombok.experimental.Accessors;
 @Setter
 @Accessors(chain = true)
 @ToString
-public class UpdateUserBalanceUpdateRequest {
+public class UpdateUserBalanceUpdateEvent {
 
     private Integer userId;
     private Double balanceUpdate;

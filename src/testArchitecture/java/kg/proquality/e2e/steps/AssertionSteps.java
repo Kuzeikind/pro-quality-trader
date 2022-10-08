@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import kg.proquality.trader.model.User;
-import kg.proquality.trader.producer.UpdateUserBalanceUpdateRequest;
+import kg.proquality.trader.producer.UpdateUserBalanceUpdateEvent;
 import org.apache.http.HttpStatus;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 
@@ -36,12 +36,12 @@ public class AssertionSteps extends BaseSteps {
 
     @Then("kafka event to update user's balance by {double} moneys should be sent")
     public void shouldSendUpdateBalanceEvent(Double amount) {
-        List<ConsumerRecord<Integer, UpdateUserBalanceUpdateRequest>> records = kafkaConsumerClient.poll();
+        List<ConsumerRecord<Integer, UpdateUserBalanceUpdateEvent>> records = kafkaConsumerClient.poll();
         assertThat(records)
             .as("Did not receive any messages")
             .isNotEmpty();
 
-        Optional<ConsumerRecord<Integer, UpdateUserBalanceUpdateRequest>> record
+        Optional<ConsumerRecord<Integer, UpdateUserBalanceUpdateEvent>> record
             = records.stream()
                      .filter(r -> r.value().getBalanceUpdate().equals(amount))
                      .findFirst();

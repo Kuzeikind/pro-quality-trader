@@ -5,9 +5,9 @@ services:
         image: postgres
         environment:
             - POSTGRES_DB=trader_db
-            - POSTGRES_USER=proquality
-            - POSTGRES_PASSWORD=password123
-#            - POSTGRES_SCHEMA=trader
+            - POSTGRES_USER=admin
+            - POSTGRES_PASSWORD=admin
+            - POSTGRES_SCHEMA=trader
         ports:
             - '5432:5432'
         volumes:

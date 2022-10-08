@@ -1,7 +1,8 @@
 package kg.proquality.trader.service;
 
+import java.util.Optional;
 import kg.proquality.trader.client.UserBalanceClient;
-import kg.proquality.trader.client.dto.UserBalanceRequestDto;
+import kg.proquality.trader.consumer.UpdateStockPriceEvent;
 import kg.proquality.trader.exception.NeedMoreMoneyException;
 import kg.proquality.trader.exception.NotEnoughSharesToSellException;
 import kg.proquality.trader.model.BuyRequest;
@@ -9,12 +10,14 @@ import kg.proquality.trader.model.SellRequest;
 import kg.proquality.trader.model.Stock;
 import kg.proquality.trader.model.User;
 import kg.proquality.trader.producer.UpdateUserBalanceProducer;
-import kg.proquality.trader.producer.UpdateUserBalanceUpdateRequest;
+import kg.proquality.trader.producer.UpdateUserBalanceUpdateEvent;
 import kg.proquality.trader.repository.StockRepository;
 import kg.proquality.trader.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class StockOperationService {
@@ -34,7 +37,7 @@ public class StockOperationService {
 
         //TODO: should probably be an API call and should check the response
         producer.updateUserBalance(
-            new UpdateUserBalanceUpdateRequest().setBalanceUpdate(-requiredCash).setUserId(user.getId())
+            new UpdateUserBalanceUpdateEvent().setBalanceUpdate(-requiredCash).setUserId(user.getId())
         );
 
         userRepository.save(user);
@@ -49,10 +52,21 @@ public class StockOperationService {
 
         Double spentCash = stock.getSellPrice() * sellRequest.getAmount();
         producer.updateUserBalance(
-            new UpdateUserBalanceUpdateRequest().setBalanceUpdate(spentCash).setUserId(user.getId())
+            new UpdateUserBalanceUpdateEvent().setBalanceUpdate(spentCash).setUserId(user.getId())
         );
 
         userRepository.save(user);
+    }
+
+    public void updateStockPrice(UpdateStockPriceEvent event) {
+        stockRepository.findByTicker(event.getTicker())
+                       .ifPresentOrElse(
+                           s -> stockRepository.save(
+                               s.setSellPrice(event.getSellPrice())
+                                .setBuyPrice(event.getBuyPrice())
+                           ),
+                           () -> log.warn("Did not find stock with ticker: {} ", event.getTicker())
+                       );
     }
 
     private Double checkIfUserHasMoney(User user, Stock stock, Integer amountToBuy) {
