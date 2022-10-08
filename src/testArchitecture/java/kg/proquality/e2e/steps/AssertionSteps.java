@@ -9,6 +9,7 @@ import io.restassured.response.Response;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import kg.proquality.trader.model.Stock;
 import kg.proquality.trader.model.User;
 import kg.proquality.trader.producer.UpdateUserBalanceUpdateEvent;
 import org.apache.http.HttpStatus;
@@ -47,5 +48,12 @@ public class AssertionSteps extends BaseSteps {
                      .findFirst();
 
         assertThat(record.isPresent()).isTrue();
+    }
+
+    @Then("stock with ticker {string} should cost {double} to sell and {double} to buy")
+    public void stockPriceShoulgBeUpdated(String ticker, Double sellPrice, Double buyPrice) {
+        Stock stock = postgresClient.findStockByTicker(ticker);
+        assertThat(stock.getSellPrice()).isEqualTo(sellPrice);
+        assertThat(stock.getBuyPrice()).isEqualTo(buyPrice);
     }
 }

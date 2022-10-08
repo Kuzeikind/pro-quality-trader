@@ -10,19 +10,17 @@ import kg.proquality.trader.producer.UpdateUserBalanceUpdateEvent;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class KafkaConsumerClient {
 
     @Value("${spring.kafka.update-user-balance.topic}")
     private String topic;
     private KafkaConsumer<Integer, UpdateUserBalanceUpdateEvent> kafkaConsumer;
-//    private TopicPartition topicPartition;
 
     public KafkaConsumerClient(Properties consumerTestProperties) {
         kafkaConsumer = new KafkaConsumer<>(consumerTestProperties);
-//        topicPartition = new TopicPartition(topic, 0);
     }
 
     @PostConstruct
