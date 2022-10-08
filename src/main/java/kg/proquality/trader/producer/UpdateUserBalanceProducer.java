@@ -16,11 +16,11 @@ public class UpdateUserBalanceProducer {
     @Value("${spring.kafka.update-user-balance.topic}")
     private String topic;
 
-    private final KafkaTemplate<Integer, UpdateUserBalanceUpdateRequest> kafkaTemplate;
+    private final KafkaTemplate<String, UpdateUserBalanceUpdateRequest> kafkaTemplate;
 
-    public ListenableFuture<SendResult<Integer, UpdateUserBalanceUpdateRequest>> updateUserBalance(UpdateUserBalanceUpdateRequest request) {
-        ListenableFuture<SendResult<Integer, UpdateUserBalanceUpdateRequest>> sent =
-            kafkaTemplate.send(topic, request.getUserId(), request);
+    public ListenableFuture<SendResult<String, UpdateUserBalanceUpdateRequest>> updateUserBalance(UpdateUserBalanceUpdateRequest request) {
+        ListenableFuture<SendResult<String, UpdateUserBalanceUpdateRequest>> sent =
+            kafkaTemplate.send(topic, request.getUserId().toString(), request);
 
         sent.addCallback(
             result -> log.info("Sent message with payload: {}", request),

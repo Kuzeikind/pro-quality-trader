@@ -9,7 +9,6 @@ import static com.github.tomakehurst.wiremock.client.WireMock.urlEqualTo;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.github.tomakehurst.wiremock.WireMockServer;
-import javax.annotation.PostConstruct;
 import kg.proquality.trader.client.dto.UserBalanceResponseDto;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -30,21 +29,20 @@ public class UserBalanceServiceMock {
     private final WireMockServer wireMockServer = new WireMockServer();
     private final JsonMapper jsonMapper = new JsonMapper();
 
-    @PostConstruct
-    public void configure() {
-        configureFor(host, port);
+    public void start() {
         wireMockServer.start();
+        configureFor(host, port);
     }
 
-    public void reset() {
-        wireMockServer.resetMappings();
+    public void shutDown() {
+        wireMockServer.shutdown();
     }
 
     public void stubForUserBalanceRequest(Integer userId, Double amount) {
         UserBalanceResponseDto response = new UserBalanceResponseDto().setUserBalance(amount);
 
         try {
-            stubFor(
+            wireMockServer.stubFor(
                 get(urlEqualTo(String.format(USER_BALANCE_URL, userId)))
                     .willReturn(aResponse().withStatus(HttpStatus.OK.value())
                                            .withHeader(CONTENT_TYPE_HEADER, MediaType.APPLICATION_JSON_VALUE)

@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 public class TraderRestClient extends BaseRestClient {
 
     private static final String API_BASE_URL = "/api/v1/trader";
-    private static final String BUY_STOCK_URL = API_BASE_URL + "{userId}/stocks/buy";
-    private static final String SELL_STOCK_URL = API_BASE_URL + "{userId}/stocks/sell";
+    private static final String BUY_STOCK_URL = API_BASE_URL + "/{userId}/stocks/buy";
+    private static final String SELL_STOCK_URL = API_BASE_URL + "/{userId}/stocks/sell";
 
     public Response buyStock(Integer userId, Integer stockId, Integer amount) {
         BuyRequestDto buyRequestDto = new BuyRequestDto()

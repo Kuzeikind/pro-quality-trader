@@ -15,7 +15,7 @@ public class PostgresContainerInitializer implements ApplicationContextInitializ
     private static final String POSTGRES_IMAGE = "postgres:12-alpine";
     private static final Integer POSTGRES_PORT = 5432;
     private static final String INIT_SCRIPT_PATH = "init_schema.sql";
-    private static final String DATABASE_NAME = "ms_brand";
+    private static final String DATABASE_NAME = "trader_db";
     private static final String USERNAME = "admin";
     private static final String PASSWORD = "admin";
 

@@ -3,6 +3,7 @@ server:
 
 spring:
   profiles:
+    active: testArchitecture
     include:
       - core
   application:

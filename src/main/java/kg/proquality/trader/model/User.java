@@ -40,7 +40,7 @@ public class User {
     private String email;
 
     @ElementCollection(fetch = FetchType.EAGER)
-    @CollectionTable(name = "user_has_stock", joinColumns = @JoinColumn(name = "user_id"))
+    @CollectionTable(schema = "trader", name = "user_has_stock", joinColumns = @JoinColumn(name = "user_id"))
     @MapKeyJoinColumn(name = "stock_id")
     @Column(name = "amount")
     private Map<Stock, Integer> boughtStocks;

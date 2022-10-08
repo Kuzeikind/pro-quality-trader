@@ -1,2 +1,2 @@
-DELETE FROM users;
-DELETE FROM stocks;
+DELETE FROM trader.users;
+DELETE FROM trader.stocks;

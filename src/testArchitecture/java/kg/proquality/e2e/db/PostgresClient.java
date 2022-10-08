@@ -6,6 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.HashMap;
+import java.util.Map;
 import javax.annotation.PostConstruct;
 import kg.proquality.trader.model.Stock;
 import kg.proquality.trader.model.User;
@@ -19,8 +21,10 @@ public class PostgresClient extends AbstractPostgresClient {
 
     private static String CREATE_USER_SQL = loadSqlFromFile("sql/create_user.sql");
     private static String CREATE_STOCK_SQL = loadSqlFromFile("sql/create_stock.sql");
+    private static String USER_HAS_STOCK_SQL = loadSqlFromFile("sql/user_has_stock.sql");
 
     private static String FIND_STOCK_BY_TICKER_SQL = loadSqlFromFile("sql/find_stock_by_ticker.sql");
+    private static String FIND_USER_STOCKS_SQL = loadSqlFromFile("sql/find_user_stocks.sql");
 
     @PostConstruct
     public void addCascadeDelete() {
@@ -42,11 +46,11 @@ public class PostgresClient extends AbstractPostgresClient {
     public void createUser(User user) {
         try(PreparedStatement statement = connection.prepareStatement(CREATE_USER_SQL)) {
             statement.setInt(1, user.getId());
-            statement.setString(1, user.getEmail());
+            statement.setString(2, user.getEmail());
 
             statement.executeUpdate();
         } catch (SQLException e) {
-            throw new IllegalArgumentException("Could not create stock", e);
+            throw new IllegalArgumentException("Could not create user", e);
         }
     }
 
@@ -70,7 +74,7 @@ public class PostgresClient extends AbstractPostgresClient {
             rs.next();
 
             Stock stock = new Stock()
-                .setTicker(ticker)
+                .setId(rs.getInt("id"))
                 .setTicker(ticker)
                 .setBuyPrice(rs.getDouble("buy_price"))
                 .setSellPrice(rs.getDouble("sell_price"));
@@ -79,6 +83,38 @@ public class PostgresClient extends AbstractPostgresClient {
 
         } catch (SQLException e) {
             throw new IllegalArgumentException("Could not extract stock with ticker: " + ticker, e);
+        }
+    }
+
+    public void userHasStock(Integer userId, Integer stockId, Integer amount) {
+        try(PreparedStatement statement = connection.prepareStatement(USER_HAS_STOCK_SQL)) {
+            statement.setInt(1, userId);
+            statement.setInt(2, stockId);
+            statement.setInt(3, amount);
+
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            throw new IllegalArgumentException("Could not add stocks to user", e);
+        }
+    }
+
+    public Map<String, Integer> findUserStocks(Integer userId) {
+        try(PreparedStatement statement = connection.prepareStatement(FIND_USER_STOCKS_SQL)) {
+            statement.setInt(1, userId);
+
+            ResultSet rs = statement.executeQuery();
+            Map<String, Integer> userStocks = new HashMap<>();
+
+            while (rs.next()) {
+                userStocks.put(
+                    rs.getString("ticker"),
+                    rs.getInt("amount")
+                );
+            }
+            return userStocks;
+
+        } catch (SQLException e) {
+            throw new IllegalArgumentException("Could not get stocks of user with id: " + userId, e);
         }
     }
 
