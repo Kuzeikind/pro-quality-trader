@@ -2,10 +2,13 @@ package kg.proquality.e2e.steps;
 
 import static kg.proquality.e2e.context.TestContext.CURRENT_USER;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.awaitility.Awaitility.await;
 import static org.hamcrest.Matchers.containsString;
 
 import io.cucumber.java.en.Then;
 import io.restassured.response.Response;
+import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -52,8 +55,14 @@ public class AssertionSteps extends BaseSteps {
 
     @Then("stock with ticker {string} should cost {double} to sell and {double} to buy")
     public void stockPriceShoulgBeUpdated(String ticker, Double sellPrice, Double buyPrice) {
-        Stock stock = postgresClient.findStockByTicker(ticker);
-        assertThat(stock.getSellPrice()).isEqualTo(sellPrice);
-        assertThat(stock.getBuyPrice()).isEqualTo(buyPrice);
+        await()
+            .pollInSameThread()
+            .pollInterval(Duration.of(200, ChronoUnit.MILLIS))
+            .timeout(Duration.of(5, ChronoUnit.SECONDS))
+            .untilAsserted(() -> {
+                Stock stock = postgresClient.findStockByTicker(ticker);
+                assertThat(stock.getSellPrice()).isEqualTo(sellPrice);
+                assertThat(stock.getBuyPrice()).isEqualTo(buyPrice);
+            });
     }
 }

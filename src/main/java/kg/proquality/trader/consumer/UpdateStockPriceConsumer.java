@@ -27,6 +27,6 @@ public class UpdateStockPriceConsumer {
     )
     public void listen(@Payload final UpdateStockPriceEvent updateStockPriceEvent) {
         stockOperationService.updateStockPrice(updateStockPriceEvent);
-        log.debug("Received updated stock price event: {}", updateStockPriceEvent);
+        log.info("Received updated stock price event: {}", updateStockPriceEvent);
     }
 }

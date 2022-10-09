@@ -21,7 +21,7 @@ public class KafkaProducerClient {
     }
 
     public Future<RecordMetadata> updateStockPrice(UpdateStockPriceEvent event) {
-        ProducerRecord<String, UpdateStockPriceEvent> record = new ProducerRecord<>(topic,null, event);
+        ProducerRecord<String, UpdateStockPriceEvent> record = new ProducerRecord<>(topic, event.getTicker(), event);
         return producer.send(record);
     }
 

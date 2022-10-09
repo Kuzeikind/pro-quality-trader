@@ -1,4 +1,4 @@
-package kg.proquality.e2e;
+package kg.proquality.e2e.config;
 
 import java.util.Properties;
 import kg.proquality.e2e.initializer.KafkaContainerInitializer;
@@ -32,6 +32,7 @@ public class KafkaTestConfiguration {
         properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, KafkaContainerInitializer.getKafkaBootstrapServers());
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
+        properties.put(ProducerConfig.BATCH_SIZE_CONFIG, 10);
         return properties;
     }
 

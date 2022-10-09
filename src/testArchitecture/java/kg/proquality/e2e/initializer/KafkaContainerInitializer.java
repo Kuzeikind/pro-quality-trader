@@ -18,6 +18,7 @@ public class KafkaContainerInitializer implements ApplicationContextInitializer<
 
     @Override
     public void initialize(ConfigurableApplicationContext applicationContext) {
+
         KAFKA_CONTAINER.start();
         String kafkaBootstrapServers = KAFKA_CONTAINER.getBootstrapServers();
 

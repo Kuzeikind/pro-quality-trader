@@ -72,6 +72,7 @@ dependencies {
         'io.cucumber:cucumber-spring:' + cucumberVersion,
         'io.rest-assured:rest-assured',
         'org.assertj:assertj-core:' + assertJVersion,
+        'org.awaitility:awaitility:4.2.0'
     )
 }
 
