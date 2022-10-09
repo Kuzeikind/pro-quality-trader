@@ -27,8 +27,4 @@ public class KafkaContainerInitializer implements ApplicationContextInitializer<
         ).applyTo(applicationContext.getEnvironment());
     }
 
-    public static String getKafkaBootstrapServers() {
-        return KAFKA_CONTAINER.getBootstrapServers();
-    }
-
 }
