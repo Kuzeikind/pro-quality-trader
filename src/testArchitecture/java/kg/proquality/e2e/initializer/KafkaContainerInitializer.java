@@ -8,16 +8,20 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.testcontainers.containers.KafkaContainer;
 import org.testcontainers.junit.jupiter.Container;
 
-public class KafkaContainerInitializer implements ApplicationContextInitializer<ConfigurableApplicationContext> {
+public class KafkaContainerInitializer
+    extends BaseContainerInitializer
+    implements ApplicationContextInitializer<ConfigurableApplicationContext> {
 
     private static String KAFKA_IMAGE = "confluentinc/cp-kafka:7.0.1";
 
-    @Container
-    private static final KafkaContainer KAFKA_CONTAINER = new KafkaContainer(
-        parse(KAFKA_IMAGE).asCompatibleSubstituteFor("confluentinc/cp-kafka"));
-
     @Override
     public void initialize(ConfigurableApplicationContext applicationContext) {
+        if (!runIsolated(applicationContext)) {
+            return;
+        }
+
+        KafkaContainer KAFKA_CONTAINER = new KafkaContainer(
+            parse(KAFKA_IMAGE).asCompatibleSubstituteFor("confluentinc/cp-kafka"));
 
         KAFKA_CONTAINER.start();
         String kafkaBootstrapServers = KAFKA_CONTAINER.getBootstrapServers();
