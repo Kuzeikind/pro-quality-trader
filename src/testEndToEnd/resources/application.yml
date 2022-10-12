@@ -3,9 +3,7 @@ server:
 
 spring:
   profiles:
-    active: testArchitecture
-    include:
-      - core
+    active: testEndToEnd
   application:
     name: trader
   datasource:
@@ -41,5 +39,3 @@ user-balance-service:
   port: 8089
   use-mock: false
 
-application:
-  run-app: true

@@ -7,8 +7,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/testArchitecture/resources/features",
-        glue = {"kg.proquality.e2e"}
+    plugin = "pretty",
+    features = "src/testEndToEnd/resources/features",
+    glue = {"kg.proquality.e2e"}
 )
 public class CucumberRunner {
 }

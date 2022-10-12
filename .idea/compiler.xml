@@ -9,8 +9,8 @@
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mapstruct/mapstruct-processor/1.3.1.Final/a5e2a807eee3372cbfba0685b70505d7c0b7ae9a/mapstruct-processor-1.3.1.Final.jar" />
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok-mapstruct-binding/0.1.0/58d622d7a4f58328dfe474491a573191bddcac5e/lombok-mapstruct-binding-0.1.0.jar" />
         </processorPath>
+        <module name="pro-quality-trader.testEndToEnd" />
         <module name="pro-quality-trader.main" />
-        <module name="pro-quality-trader.testArchitecture" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />

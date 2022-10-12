@@ -17,15 +17,16 @@ import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 
 public abstract class BaseRestClient {
-    protected static final String HOST = "localhost";
 
-    @Value("${server.port}")
-    protected int port;
+//    @Value("${APP_PORT}")
+    protected int port = 8085;
+//    @Value("${APP_HOST}")
+    protected String host = "localhost";
     protected String baseUrl;
 
     @PostConstruct
     public void createBaseUrl() {
-        this.baseUrl = String.format("http://%s:%d", HOST, port);
+        this.baseUrl = String.format("http://%s:%d", host, port);
     }
 
     protected RequestSpecification given() {

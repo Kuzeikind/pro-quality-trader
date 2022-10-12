@@ -7,7 +7,7 @@ public class Utils {
 
     private Utils() {}
 
-    private static final String RESOURCES_DIRECTORY = "src/testArchitecture/resources/";
+    private static final String RESOURCES_DIRECTORY = "src/testEndToEnd/resources/";
 
     public static String loadSqlFromFile(String filePath) {
         try (FileInputStream fin = new FileInputStream(RESOURCES_DIRECTORY + filePath)) {
