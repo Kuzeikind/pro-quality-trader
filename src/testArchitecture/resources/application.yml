@@ -39,3 +39,5 @@ spring:
 user-balance-service:
   host: "localhost"
   port: 8089
+  use-mock: false
+

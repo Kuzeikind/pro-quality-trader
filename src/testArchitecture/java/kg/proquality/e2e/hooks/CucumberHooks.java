@@ -3,7 +3,7 @@ package kg.proquality.e2e.hooks;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import kg.proquality.e2e.db.PostgresClient;
-import kg.proquality.e2e.mock.UserBalanceServiceMock;
+import kg.proquality.e2e.mock.UserBalanceServiceStub;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -14,18 +14,16 @@ public class CucumberHooks {
     private PostgresClient postgresClient;
 
     @Autowired
-    private UserBalanceServiceMock userBalanceServiceMock;
+    private UserBalanceServiceStub userBalanceService;
 
     @Before("@EnableWireMock")
-    public void startWireMock() {
-        log.info("Started wiremock server");
-        userBalanceServiceMock.start();
+    public void initUserBalanceStub() {
+        userBalanceService.init();
     }
 
     @After("@EnableWireMock")
-    public void shutDownWireMock() {
-        userBalanceServiceMock.shutDown();
-        log.info("Shut down wiremock server");
+    public void shutDownUserBalanceStub() {
+        userBalanceService.shutDown();
     }
 
     @After

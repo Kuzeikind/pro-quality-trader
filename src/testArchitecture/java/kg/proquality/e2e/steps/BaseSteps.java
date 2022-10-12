@@ -5,7 +5,7 @@ import kg.proquality.e2e.context.TestContext;
 import kg.proquality.e2e.db.PostgresClient;
 import kg.proquality.e2e.kafka.KafkaConsumerClient;
 import kg.proquality.e2e.kafka.KafkaProducerClient;
-import kg.proquality.e2e.mock.UserBalanceServiceMock;
+import kg.proquality.e2e.mock.UserBalanceServiceStub;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public abstract class BaseSteps {
@@ -19,8 +19,11 @@ public abstract class BaseSteps {
     @Autowired
     protected TestContext testContext;
 
+//    @Autowired
+//    protected UserBalanceServiceMock userBalanceServiceMock;
+
     @Autowired
-    protected UserBalanceServiceMock userBalanceServiceMock;
+    protected UserBalanceServiceStub userBalanceService;
 
     @Autowired
     protected KafkaConsumerClient kafkaConsumerClient;

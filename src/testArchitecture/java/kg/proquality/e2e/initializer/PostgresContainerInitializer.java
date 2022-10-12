@@ -6,7 +6,6 @@ import org.springframework.boot.test.util.TestPropertyValues;
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.testcontainers.containers.PostgreSQLContainer;
-import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
 @Testcontainers
@@ -21,19 +20,19 @@ public class PostgresContainerInitializer
     private static final String USERNAME = "admin";
     private static final String PASSWORD = "admin";
 
+    private static final PostgreSQLContainer<?> POSTGRES_CONTAINER = new PostgreSQLContainer<>(
+        parse(POSTGRES_IMAGE).asCompatibleSubstituteFor("postgres"))
+        .withDatabaseName(DATABASE_NAME)
+        .withInitScript(INIT_SCRIPT_PATH)
+        .withUsername(USERNAME)
+        .withPassword(PASSWORD)
+        .withExposedPorts(POSTGRES_PORT);
+
     @Override
     public void initialize(ConfigurableApplicationContext applicationContext) {
         if (!runIsolated(applicationContext)) {
             return;
         }
-
-        PostgreSQLContainer<?> POSTGRES_CONTAINER = new PostgreSQLContainer<>(
-            parse(POSTGRES_IMAGE).asCompatibleSubstituteFor("postgres"))
-            .withDatabaseName(DATABASE_NAME)
-            .withInitScript(INIT_SCRIPT_PATH)
-            .withUsername(USERNAME)
-            .withPassword(PASSWORD)
-            .withExposedPorts(POSTGRES_PORT);
 
         POSTGRES_CONTAINER.start();
         String jdbcUrl = POSTGRES_CONTAINER.getJdbcUrl();

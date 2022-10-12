@@ -27,7 +27,8 @@ public class GivenSteps extends BaseSteps {
     public void userHasMoney(Double amount) {
         User currentUser = testContext.get(CURRENT_USER);
 
-        userBalanceServiceMock.stubForUserBalanceRequest(currentUser.getId(), amount);
+        userBalanceService.stubForUserBalanceRequest(currentUser.getId(), amount);
+//        userBalanceServiceMock.stubForUserBalanceRequest(currentUser.getId(), amount);
     }
 
     @Given("stock with ticker {string} exists and costs {double} moneys to sell and {double} moneys to buy")

@@ -1,13 +1,13 @@
-‹17:55:43.406 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-†17:55:43.418 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-î17:55:43.451 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [kg.proquality.e2e.config.CucumberSpringConfiguration] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-∏17:55:43.464 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [kg.proquality.e2e.config.CucumberSpringConfiguration]: class path resource [kg/proquality/e2e/config/CucumberSpringConfiguration-context.xml] does not exist
-∫17:55:43.465 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [kg.proquality.e2e.config.CucumberSpringConfiguration]: class path resource [kg/proquality/e2e/config/CucumberSpringConfigurationContext.groovy] does not exist
-ì17:55:43.465 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [kg.proquality.e2e.config.CucumberSpringConfiguration]: no resource found for suffixes {-context.xml, Context.groovy}.
-ñ17:55:43.510 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [kg.proquality.e2e.config.CucumberSpringConfiguration]
-‰17:55:43.622 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [kg.proquality.e2e.config.CucumberSpringConfiguration]: using defaults.
-≥17:55:43.622 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-É17:55:43.646 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@73d6d0c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@e36bb2a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3961a41a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5a4ed68f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@367795c7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@d2387c8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3956b302, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1500e009, org.springframework.test.context.event.EventPublishingTestExecutionListener@1fd386c3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@edf4f36, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@29d334c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@100f9bbe, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@13e9f2e2, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@673bb956, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@cd7f1ae]
+‹16:52:03.783 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+†16:52:03.795 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+î16:52:03.828 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [kg.proquality.e2e.config.CucumberSpringConfiguration] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+∏16:52:03.841 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [kg.proquality.e2e.config.CucumberSpringConfiguration]: class path resource [kg/proquality/e2e/config/CucumberSpringConfiguration-context.xml] does not exist
+∫16:52:03.842 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [kg.proquality.e2e.config.CucumberSpringConfiguration]: class path resource [kg/proquality/e2e/config/CucumberSpringConfigurationContext.groovy] does not exist
+ì16:52:03.842 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [kg.proquality.e2e.config.CucumberSpringConfiguration]: no resource found for suffixes {-context.xml, Context.groovy}.
+ñ16:52:03.887 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [kg.proquality.e2e.config.CucumberSpringConfiguration]
+‰16:52:04.023 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [kg.proquality.e2e.config.CucumberSpringConfiguration]: using defaults.
+≥16:52:04.024 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+É16:52:04.058 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@73d6d0c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@e36bb2a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3961a41a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5a4ed68f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@367795c7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@d2387c8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3956b302, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1500e009, org.springframework.test.context.event.EventPublishingTestExecutionListener@1fd386c3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@edf4f36, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@29d334c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@100f9bbe, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@13e9f2e2, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@673bb956, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@cd7f1ae]
 
 (  .   ____          _            __ _ _
 ) /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -17,56 +17,56 @@
 ) =========|_|==============|___/=/_/_/_/
 + :: Spring Boot ::                (v2.6.3)
 
-ä2022-10-09 17:55:44.082  INFO 24231 --- [    Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
-Ë2022-10-09 17:55:45.023  INFO 24231 --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with Environment variables, system properties and defaults. Resolved dockerHost=tcp://192.168.59.100:2376
-é2022-10-09 17:55:45.024  INFO 24231 --- [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is 192.168.59.100
-{2022-10-09 17:55:45.057  INFO 24231 --- [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+ä2022-10-10 16:52:04.620  INFO 59036 --- [    Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+Ë2022-10-10 16:52:05.865  INFO 59036 --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with Environment variables, system properties and defaults. Resolved dockerHost=tcp://192.168.59.100:2376
+é2022-10-10 16:52:05.866  INFO 59036 --- [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is 192.168.59.100
+{2022-10-10 16:52:05.898  INFO 59036 --- [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
   Server Version: 20.10.12
   API Version: 1.41
 (  Operating System: Buildroot 2021.02.4
   Total Memory: 5812 MB
-µ2022-10-09 17:55:45.790  INFO 24231 --- [    Test worker] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
-|2022-10-09 17:55:45.791  INFO 24231 --- [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
-õ2022-10-09 17:55:45.791  INFO 24231 --- [    Test worker] org.testcontainers.DockerClientFactory   : ‚úîÔ∏é Docker server version should be at least 1.6.0
-©2022-10-09 17:55:46.086  INFO 24231 --- [    Test worker] org.testcontainers.DockerClientFactory   : ‚úîÔ∏é Docker environment should have more than 2GB free disk space
-°2022-10-09 17:55:46.087  INFO 24231 --- [    Test worker] üê≥ [confluentinc/cp-kafka:7.0.1]         : Creating container for image: confluentinc/cp-kafka:7.0.1
-€2022-10-09 17:55:46.155  INFO 24231 --- [    Test worker] üê≥ [confluentinc/cp-kafka:7.0.1]         : Container confluentinc/cp-kafka:7.0.1 is starting: 66ee88c8f0f06b5cb09582c3a01103ea1c4ce5b4c5f1c443954713ae258bb023
-§2022-10-09 17:55:52.278  INFO 24231 --- [    Test worker] üê≥ [confluentinc/cp-kafka:7.0.1]         : Container confluentinc/cp-kafka:7.0.1 started in PT6.191346S
-ò2022-10-09 17:55:55.082  INFO 24231 --- [    Test worker] üê≥ [postgres:12-alpine]                  : Creating container for image: postgres:12-alpine
-“2022-10-09 17:55:55.113  INFO 24231 --- [    Test worker] üê≥ [postgres:12-alpine]                  : Container postgres:12-alpine is starting: 67aaa9bd1d6249f7c4fc726c4dbd8622e669ec5db16f9cfbb8c4f9f6b109d023
-ö2022-10-09 17:55:56.752  INFO 24231 --- [    Test worker] üê≥ [postgres:12-alpine]                  : Container postgres:12-alpine started in PT1.67027S
-ò2022-10-09 17:55:56.759  INFO 24231 --- [    Test worker] org.testcontainers.ext.ScriptUtils       : Executing database script from sql/init_schema.sql
-°2022-10-09 17:55:56.857  INFO 24231 --- [    Test worker] org.testcontainers.ext.ScriptUtils       : Executed database script from sql/init_schema.sql in 98 ms.
-ê2022-10-09 17:55:56.865  INFO 24231 --- [    Test worker] k.p.e.c.CucumberSpringConfiguration      : Starting CucumberSpringConfiguration using Java 11.0.1 on EPRUPETW1191 with PID 24231 (started by Nikolai_Kuzeikin in /Users/Nikolai_Kuzeikin/Projects/pro-quality-trader)
-û2022-10-09 17:55:56.865  INFO 24231 --- [    Test worker] k.p.e.c.CucumberSpringConfiguration      : The following profiles are active: core,testArchitecture
-°2022-10-09 17:55:57.762  INFO 24231 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-ª2022-10-09 17:55:57.827  INFO 24231 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
-í2022-10-09 17:55:58.572  INFO 24231 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-2022-10-09 17:55:58.585  INFO 24231 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-ï2022-10-09 17:55:58.586  INFO 24231 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
-ò2022-10-09 17:55:58.702  INFO 24231 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-•2022-10-09 17:55:58.703  INFO 24231 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1624 ms
-Ä2022-10-09 17:55:58.906  INFO 24231 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-Ö2022-10-09 17:55:58.943  INFO 24231 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-á2022-10-09 17:55:59.085  INFO 24231 --- [    Test worker] liquibase.database                       : Set default schema name to public
-ã2022-10-09 17:55:59.200  INFO 24231 --- [    Test worker] liquibase.lockservice                    : Successfully acquired change log lock
-©2022-10-09 17:55:59.367  INFO 24231 --- [    Test worker] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
-ã2022-10-09 17:55:59.374  INFO 24231 --- [    Test worker] liquibase.changelog                      : Reading from public.databasechangelog
+µ2022-10-10 16:52:06.823  INFO 59036 --- [    Test worker] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+|2022-10-10 16:52:06.823  INFO 59036 --- [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+õ2022-10-10 16:52:06.824  INFO 59036 --- [    Test worker] org.testcontainers.DockerClientFactory   : ‚úîÔ∏é Docker server version should be at least 1.6.0
+©2022-10-10 16:52:07.166  INFO 59036 --- [    Test worker] org.testcontainers.DockerClientFactory   : ‚úîÔ∏é Docker environment should have more than 2GB free disk space
+°2022-10-10 16:52:07.167  INFO 59036 --- [    Test worker] üê≥ [confluentinc/cp-kafka:7.0.1]         : Creating container for image: confluentinc/cp-kafka:7.0.1
+€2022-10-10 16:52:07.234  INFO 59036 --- [    Test worker] üê≥ [confluentinc/cp-kafka:7.0.1]         : Container confluentinc/cp-kafka:7.0.1 is starting: c5650265f99001e6bc476ab963589c85e133436be82f2724c9abe4b6794525bb
+§2022-10-10 16:52:15.432  INFO 59036 --- [    Test worker] üê≥ [confluentinc/cp-kafka:7.0.1]         : Container confluentinc/cp-kafka:7.0.1 started in PT8.265729S
+ò2022-10-10 16:52:17.742  INFO 59036 --- [    Test worker] üê≥ [postgres:12-alpine]                  : Creating container for image: postgres:12-alpine
+“2022-10-10 16:52:17.791  INFO 59036 --- [    Test worker] üê≥ [postgres:12-alpine]                  : Container postgres:12-alpine is starting: f0c04fda66829dc87125cdde19a09975e8b9d6930d95f7b6d0c26c6f6e40c23e
+õ2022-10-10 16:52:19.564  INFO 59036 --- [    Test worker] üê≥ [postgres:12-alpine]                  : Container postgres:12-alpine started in PT1.822205S
+ò2022-10-10 16:52:19.572  INFO 59036 --- [    Test worker] org.testcontainers.ext.ScriptUtils       : Executing database script from sql/init_schema.sql
+¢2022-10-10 16:52:19.684  INFO 59036 --- [    Test worker] org.testcontainers.ext.ScriptUtils       : Executed database script from sql/init_schema.sql in 112 ms.
+ê2022-10-10 16:52:19.692  INFO 59036 --- [    Test worker] k.p.e.c.CucumberSpringConfiguration      : Starting CucumberSpringConfiguration using Java 11.0.1 on EPRUPETW1191 with PID 59036 (started by Nikolai_Kuzeikin in /Users/Nikolai_Kuzeikin/Projects/pro-quality-trader)
+û2022-10-10 16:52:19.693  INFO 59036 --- [    Test worker] k.p.e.c.CucumberSpringConfiguration      : The following profiles are active: core,testArchitecture
+°2022-10-10 16:52:20.778  INFO 59036 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ª2022-10-10 16:52:20.869  INFO 59036 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+í2022-10-10 16:52:21.886  INFO 59036 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-10-10 16:52:21.904  INFO 59036 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+ï2022-10-10 16:52:21.905  INFO 59036 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+ò2022-10-10 16:52:22.049  INFO 59036 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+•2022-10-10 16:52:22.049  INFO 59036 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2133 ms
+Ä2022-10-10 16:52:22.302  INFO 59036 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+Ö2022-10-10 16:52:22.348  INFO 59036 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+á2022-10-10 16:52:26.546  INFO 59036 --- [    Test worker] liquibase.database                       : Set default schema name to public
+ã2022-10-10 16:52:26.655  INFO 59036 --- [    Test worker] liquibase.lockservice                    : Successfully acquired change log lock
+©2022-10-10 16:52:26.854  INFO 59036 --- [    Test worker] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+ã2022-10-10 16:52:26.861  INFO 59036 --- [    Test worker] liquibase.changelog                      : Reading from public.databasechangelog
 FRunning Changeset: /db/version/001/setup.json::001-schema::proquality
-â2022-10-09 17:55:59.477  INFO 24231 --- [    Test worker] liquibase.changelog                      : SQL in file ddl-schema.sql executed
-ª2022-10-09 17:55:59.478  INFO 24231 --- [    Test worker] liquibase.changelog                      : ChangeSet /db/version/001/setup.json::001-schema::proquality ran successfully in 49ms
-ã2022-10-09 17:55:59.487  INFO 24231 --- [    Test worker] liquibase.lockservice                    : Successfully released change log lock
-ü2022-10-09 17:55:59.683  INFO 24231 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-ó2022-10-09 17:55:59.747  INFO 24231 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
-û2022-10-09 17:55:59.974  INFO 24231 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-©2022-10-09 17:56:00.104  INFO 24231 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-Ÿ2022-10-09 17:56:00.736  INFO 24231 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-©2022-10-09 17:56:00.746  INFO 24231 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-}2022-10-09 17:56:00.849  INFO 24231 --- [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+â2022-10-10 16:52:26.952  INFO 59036 --- [    Test worker] liquibase.changelog                      : SQL in file ddl-schema.sql executed
+ª2022-10-10 16:52:26.953  INFO 59036 --- [    Test worker] liquibase.changelog                      : ChangeSet /db/version/001/setup.json::001-schema::proquality ran successfully in 44ms
+ã2022-10-10 16:52:26.962  INFO 59036 --- [    Test worker] liquibase.lockservice                    : Successfully released change log lock
+ü2022-10-10 16:52:27.197  INFO 59036 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+ó2022-10-10 16:52:27.287  INFO 59036 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+û2022-10-10 16:52:27.569  INFO 59036 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+©2022-10-10 16:52:27.726  INFO 59036 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+Ÿ2022-10-10 16:52:28.500  INFO 59036 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+©2022-10-10 16:52:28.514  INFO 59036 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+}2022-10-10 16:52:28.678  INFO 59036 --- [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
 !	allow.auto.create.topics = true
  	auto.commit.interval.ms = 5000
 	auto.offset.reset = earliest
-8	bootstrap.servers = [PLAINTEXT://192.168.59.100:49241]
+8	bootstrap.servers = [PLAINTEXT://192.168.59.100:49285]
 	check.crcs = true
 %	client.dns.lookup = use_all_dns_ips
  	client.id = consumer-group-1-1
@@ -141,14 +141,14 @@
 	ssl.truststore.type = JKS
 Z	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
 
-z2022-10-09 17:56:01.000  INFO 24231 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
-Ü2022-10-09 17:56:01.000  INFO 24231 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
-Ü2022-10-09 17:56:01.000  INFO 24231 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1665316560998
-«2022-10-09 17:56:01.006  INFO 24231 --- [    Test worker] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group-1-1, groupId=group-1] Subscribed to topic(s): updateUserBalance
-}2022-10-09 17:56:01.017  INFO 24231 --- [    Test worker] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+z2022-10-10 16:52:28.869  INFO 59036 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
+Ü2022-10-10 16:52:28.869  INFO 59036 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
+Ü2022-10-10 16:52:28.870  INFO 59036 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1665399148868
+«2022-10-10 16:52:28.875  INFO 59036 --- [    Test worker] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group-1-1, groupId=group-1] Subscribed to topic(s): updateUserBalance
+}2022-10-10 16:52:28.882  INFO 59036 --- [    Test worker] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
 	acks = -1
 	batch.size = 10
-8	bootstrap.servers = [PLAINTEXT://192.168.59.100:49241]
+8	bootstrap.servers = [PLAINTEXT://192.168.59.100:49285]
 	buffer.memory = 33554432
 %	client.dns.lookup = use_all_dns_ips
 	client.id = producer-1
@@ -217,17 +217,17 @@
 	transactional.id = null
 V	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
 
-z2022-10-09 17:56:01.056  INFO 24231 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
-Ü2022-10-09 17:56:01.058  INFO 24231 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
-Ü2022-10-09 17:56:01.058  INFO 24231 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1665316561056
-©2022-10-09 17:56:01.281  INFO 24231 --- [    Test worker] org.eclipse.jetty.util.log               : Logging initialized @18961ms to org.eclipse.jetty.util.log.Slf4jLog
-ß2022-10-09 17:56:01.431  INFO 24231 --- [ad | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: ZPsAiOalQK2crPSR_GJDFA
-ù2022-10-09 17:56:02.072  WARN 24231 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-}2022-10-09 17:56:02.829  INFO 24231 --- [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+z2022-10-10 16:52:28.916  INFO 59036 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
+Ü2022-10-10 16:52:28.916  INFO 59036 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
+Ü2022-10-10 16:52:28.917  INFO 59036 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1665399148916
+©2022-10-10 16:52:29.154  INFO 59036 --- [    Test worker] org.eclipse.jetty.util.log               : Logging initialized @26343ms to org.eclipse.jetty.util.log.Slf4jLog
+ß2022-10-10 16:52:29.316  INFO 59036 --- [ad | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: IQaOZhh5RZWzDGLNSilMJQ
+ù2022-10-10 16:52:30.150  WARN 59036 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+}2022-10-10 16:52:31.147  INFO 59036 --- [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
 !	allow.auto.create.topics = true
  	auto.commit.interval.ms = 5000
 	auto.offset.reset = earliest
-8	bootstrap.servers = [PLAINTEXT://192.168.59.100:49241]
+8	bootstrap.servers = [PLAINTEXT://192.168.59.100:49285]
 	check.crcs = true
 %	client.dns.lookup = use_all_dns_ips
 "	client.id = consumer-ms-trader-2
@@ -302,36 +302,36 @@
 	ssl.truststore.type = JKS
 Z	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
 
-z2022-10-09 17:56:02.838  INFO 24231 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
-Ü2022-10-09 17:56:02.839  INFO 24231 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
-Ü2022-10-09 17:56:02.839  INFO 24231 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1665316562838
- 2022-10-09 17:56:02.841  INFO 24231 --- [    Test worker] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Subscribed to topic(s): updateStockPrice
-°2022-10-09 17:56:02.874  INFO 24231 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-¥2022-10-09 17:56:02.887  INFO 24231 --- [    Test worker] k.p.e.c.CucumberSpringConfiguration      : Started CucumberSpringConfiguration in 19.217 seconds (JVM running for 20.567)
-ˇ2022-10-09 17:56:02.960  WARN 24231 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Error while fetching metadata with correlation id 2 : {updateStockPrice=LEADER_NOT_AVAILABLE}
-ƒ2022-10-09 17:56:02.960  INFO 24231 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Cluster ID: ZPsAiOalQK2crPSR_GJDFA
-ˇ2022-10-09 17:56:03.071  WARN 24231 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Error while fetching metadata with correlation id 4 : {updateStockPrice=LEADER_NOT_AVAILABLE}
-}2022-10-09 17:56:03.145  INFO 24231 --- [    Test worker] kg.proquality.e2e.hooks.CucumberHooks    : Started wiremock server
-€2022-10-09 17:56:03.148  INFO 24231 --- [    Test worker] org.eclipse.jetty.server.Server          : jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.1+13
-ˇ2022-10-09 17:56:03.180  WARN 24231 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Error while fetching metadata with correlation id 6 : {updateStockPrice=LEADER_NOT_AVAILABLE}
-≠2022-10-09 17:56:03.186  INFO 24231 --- [    Test worker] o.e.jetty.server.handler.ContextHandler  : Started o.e.j.s.ServletContextHandler@392da875{/__admin,null,AVAILABLE}
-¶2022-10-09 17:56:03.189  INFO 24231 --- [    Test worker] o.e.jetty.server.handler.ContextHandler  : Started o.e.j.s.ServletContextHandler@5b3063b7{/,null,AVAILABLE}
-∏2022-10-09 17:56:03.208  INFO 24231 --- [    Test worker] o.e.jetty.server.AbstractConnector       : Started NetworkTrafficServerConnector@422ab2ff{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
-v2022-10-09 17:56:03.209  INFO 24231 --- [    Test worker] org.eclipse.jetty.server.Server          : Started @20889ms
-ˇ2022-10-09 17:56:03.286  WARN 24231 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Error while fetching metadata with correlation id 8 : {updateStockPrice=LEADER_NOT_AVAILABLE}
-Ä2022-10-09 17:56:03.400  WARN 24231 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Error while fetching metadata with correlation id 10 : {updateStockPrice=LEADER_NOT_AVAILABLE}
-Ô2022-10-09 17:56:03.523  INFO 24231 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Discovered group coordinator 192.168.59.100:49241 (id: 2147483646 rack: null)
-¥2022-10-09 17:56:03.529  INFO 24231 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] (Re-)joining group
-Ë2022-10-09 17:56:03.582  INFO 24231 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Request joining group due to: need to re-join with the given member-id
-¥2022-10-09 17:56:03.583  INFO 24231 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] (Re-)joining group
-æ2022-10-09 17:56:03.628  INFO 24231 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Successfully joined group with generation Generation{generationId=1, memberId='consumer-ms-trader-2-2bec039d-26d5-4854-bd15-fd1eeeb43111', protocol='range'}
-∏2022-10-09 17:56:03.631  INFO 24231 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Finished assignment for group at generation 1: {consumer-ms-trader-2-2bec039d-26d5-4854-bd15-fd1eeeb43111=Assignment(partitions=[updateStockPrice-0])}
-º2022-10-09 17:56:03.771  INFO 24231 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Successfully synced group in generation Generation{generationId=1, memberId='consumer-ms-trader-2-2bec039d-26d5-4854-bd15-fd1eeeb43111', protocol='range'}
-Ó2022-10-09 17:56:03.772  INFO 24231 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Notifying assignor about the new Assignment(partitions=[updateStockPrice-0])
-÷2022-10-09 17:56:03.776  INFO 24231 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Adding newly assigned partitions: updateStockPrice-0
-‹2022-10-09 17:56:03.806  INFO 24231 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Found no committed offset for partition updateStockPrice-0
-ı2022-10-09 17:56:03.855  INFO 24231 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Resetting offset for partition updateStockPrice-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.59.100:49241 (id: 1 rack: null)], epoch=0}}.
-ö2022-10-09 17:56:03.856  INFO 24231 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : ms-trader: partitions assigned: [updateStockPrice-0]
+z2022-10-10 16:52:31.158  INFO 59036 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
+Ü2022-10-10 16:52:31.158  INFO 59036 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
+Ü2022-10-10 16:52:31.158  INFO 59036 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1665399151158
+ 2022-10-10 16:52:31.160  INFO 59036 --- [    Test worker] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Subscribed to topic(s): updateStockPrice
+°2022-10-10 16:52:31.208  INFO 59036 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+≥2022-10-10 16:52:31.220  INFO 59036 --- [    Test worker] k.p.e.c.CucumberSpringConfiguration      : Started CucumberSpringConfiguration in 27.135 seconds (JVM running for 28.41)
+ˇ2022-10-10 16:52:31.290  WARN 59036 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Error while fetching metadata with correlation id 2 : {updateStockPrice=LEADER_NOT_AVAILABLE}
+ƒ2022-10-10 16:52:31.290  INFO 59036 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Cluster ID: IQaOZhh5RZWzDGLNSilMJQ
+ˇ2022-10-10 16:52:31.408  WARN 59036 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Error while fetching metadata with correlation id 4 : {updateStockPrice=LEADER_NOT_AVAILABLE}
+ˇ2022-10-10 16:52:31.517  WARN 59036 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Error while fetching metadata with correlation id 6 : {updateStockPrice=LEADER_NOT_AVAILABLE}
+}2022-10-10 16:52:31.532  INFO 59036 --- [    Test worker] kg.proquality.e2e.hooks.CucumberHooks    : Started wiremock server
+€2022-10-10 16:52:31.535  INFO 59036 --- [    Test worker] org.eclipse.jetty.server.Server          : jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.1+13
+≠2022-10-10 16:52:31.573  INFO 59036 --- [    Test worker] o.e.jetty.server.handler.ContextHandler  : Started o.e.j.s.ServletContextHandler@68603829{/__admin,null,AVAILABLE}
+¶2022-10-10 16:52:31.577  INFO 59036 --- [    Test worker] o.e.jetty.server.handler.ContextHandler  : Started o.e.j.s.ServletContextHandler@6aca85da{/,null,AVAILABLE}
+∏2022-10-10 16:52:31.594  INFO 59036 --- [    Test worker] o.e.jetty.server.AbstractConnector       : Started NetworkTrafficServerConnector@4494ed08{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+v2022-10-10 16:52:31.594  INFO 59036 --- [    Test worker] org.eclipse.jetty.server.Server          : Started @28784ms
+ˇ2022-10-10 16:52:31.624  WARN 59036 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Error while fetching metadata with correlation id 8 : {updateStockPrice=LEADER_NOT_AVAILABLE}
+Ä2022-10-10 16:52:31.732  WARN 59036 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Error while fetching metadata with correlation id 10 : {updateStockPrice=LEADER_NOT_AVAILABLE}
+Ô2022-10-10 16:52:31.965  INFO 59036 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Discovered group coordinator 192.168.59.100:49285 (id: 2147483646 rack: null)
+¥2022-10-10 16:52:31.969  INFO 59036 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] (Re-)joining group
+Ë2022-10-10 16:52:32.024  INFO 59036 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Request joining group due to: need to re-join with the given member-id
+¥2022-10-10 16:52:32.025  INFO 59036 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] (Re-)joining group
+æ2022-10-10 16:52:32.084  INFO 59036 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Successfully joined group with generation Generation{generationId=1, memberId='consumer-ms-trader-2-c517682b-c300-4141-833c-9c54b9d25f36', protocol='range'}
+∏2022-10-10 16:52:32.087  INFO 59036 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Finished assignment for group at generation 1: {consumer-ms-trader-2-c517682b-c300-4141-833c-9c54b9d25f36=Assignment(partitions=[updateStockPrice-0])}
+º2022-10-10 16:52:32.255  INFO 59036 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Successfully synced group in generation Generation{generationId=1, memberId='consumer-ms-trader-2-c517682b-c300-4141-833c-9c54b9d25f36', protocol='range'}
+Ó2022-10-10 16:52:32.256  INFO 59036 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Notifying assignor about the new Assignment(partitions=[updateStockPrice-0])
+÷2022-10-10 16:52:32.262  INFO 59036 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Adding newly assigned partitions: updateStockPrice-0
+‹2022-10-10 16:52:32.296  INFO 59036 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Found no committed offset for partition updateStockPrice-0
+ı2022-10-10 16:52:32.327  INFO 59036 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-ms-trader-2, groupId=ms-trader] Resetting offset for partition updateStockPrice-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.59.100:49285 (id: 1 rack: null)], epoch=0}}.
+ö2022-10-10 16:52:32.329  INFO 59036 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : ms-trader: partitions assigned: [updateStockPrice-0]
 Request method:	POST
 ARequest URI:	http://localhost:8085/api/v1/trader/1234/stocks/buy
 Proxy:			<none>
@@ -348,14 +348,14 @@
     "stockId": 6,
     "amount": 5
 }
-ü2022-10-09 17:56:04.843  INFO 24231 --- [nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-é2022-10-09 17:56:04.843  INFO 24231 --- [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-Ü2022-10-09 17:56:04.845  INFO 24231 --- [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-10-09 17:56:05.109  INFO 24231 --- [qtp984798796-46] o.e.j.s.handler.ContextHandler.ROOT      : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
-}2022-10-09 17:56:05.815  INFO 24231 --- [nio-8085-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+ü2022-10-10 16:52:33.371  INFO 59036 --- [nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+é2022-10-10 16:52:33.371  INFO 59036 --- [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+Ü2022-10-10 16:52:33.373  INFO 59036 --- [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-10 16:52:33.700  INFO 59036 --- [tp1064249035-46] o.e.j.s.handler.ContextHandler.ROOT      : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+}2022-10-10 16:52:34.442  INFO 59036 --- [nio-8085-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
 	acks = -1
 	batch.size = 16384
-8	bootstrap.servers = [PLAINTEXT://192.168.59.100:49241]
+8	bootstrap.servers = [PLAINTEXT://192.168.59.100:49285]
 	buffer.memory = 33554432
 %	client.dns.lookup = use_all_dns_ips
 	client.id = producer-2
@@ -424,33 +424,33 @@
 	transactional.id = null
 V	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
 
-z2022-10-09 17:56:05.821  INFO 24231 --- [nio-8085-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
-Ü2022-10-09 17:56:05.822  INFO 24231 --- [nio-8085-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
-Ü2022-10-09 17:56:05.822  INFO 24231 --- [nio-8085-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1665316565821
-„2022-10-09 17:56:05.854  WARN 24231 --- [ad | producer-2] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-2] Error while fetching metadata with correlation id 1 : {updateUserBalance=LEADER_NOT_AVAILABLE}
-ß2022-10-09 17:56:05.854  INFO 24231 --- [ad | producer-2] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-2] Cluster ID: ZPsAiOalQK2crPSR_GJDFA
-ø2022-10-09 17:56:06.010  INFO 24231 --- [ad | producer-2] k.p.t.p.UpdateUserBalanceProducer        : Sent message with payload: UpdateUserBalanceUpdateEvent(userId=1234, balanceUpdate=-50.0)
+z2022-10-10 16:52:34.455  INFO 59036 --- [nio-8085-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
+Ü2022-10-10 16:52:34.455  INFO 59036 --- [nio-8085-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
+Ü2022-10-10 16:52:34.455  INFO 59036 --- [nio-8085-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1665399154455
+„2022-10-10 16:52:34.509  WARN 59036 --- [ad | producer-2] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-2] Error while fetching metadata with correlation id 1 : {updateUserBalance=LEADER_NOT_AVAILABLE}
+ß2022-10-10 16:52:34.510  INFO 59036 --- [ad | producer-2] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-2] Cluster ID: IQaOZhh5RZWzDGLNSilMJQ
+ø2022-10-10 16:52:34.690  INFO 59036 --- [ad | producer-2] k.p.t.p.UpdateUserBalanceProducer        : Sent message with payload: UpdateUserBalanceUpdateEvent(userId=1234, balanceUpdate=-50.0)
 HTTP/1.1 204 
-$Date: Sun, 09 Oct 2022 11:56:06 GMT
+$Date: Mon, 10 Oct 2022 10:52:34 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
-¿2022-10-09 17:56:06.124  INFO 24231 --- [    Test worker] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group-1-1, groupId=group-1] Cluster ID: ZPsAiOalQK2crPSR_GJDFA
-Î2022-10-09 17:56:06.126  INFO 24231 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] Discovered group coordinator 192.168.59.100:49241 (id: 2147483646 rack: null)
-∞2022-10-09 17:56:06.129  INFO 24231 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] (Re-)joining group
-‰2022-10-09 17:56:06.137  INFO 24231 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] Request joining group due to: need to re-join with the given member-id
-∞2022-10-09 17:56:06.137  INFO 24231 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] (Re-)joining group
-∏2022-10-09 17:56:06.144  INFO 24231 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] Successfully joined group with generation Generation{generationId=1, memberId='consumer-group-1-1-79e8f8e7-37aa-4e97-b80a-2fe7cf7c7350', protocol='range'}
-≥2022-10-09 17:56:06.145  INFO 24231 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] Finished assignment for group at generation 1: {consumer-group-1-1-79e8f8e7-37aa-4e97-b80a-2fe7cf7c7350=Assignment(partitions=[updateUserBalance-0])}
-∂2022-10-09 17:56:06.152  INFO 24231 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] Successfully synced group in generation Generation{generationId=1, memberId='consumer-group-1-1-79e8f8e7-37aa-4e97-b80a-2fe7cf7c7350', protocol='range'}
-Î2022-10-09 17:56:06.153  INFO 24231 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] Notifying assignor about the new Assignment(partitions=[updateUserBalance-0])
-”2022-10-09 17:56:06.153  INFO 24231 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] Adding newly assigned partitions: updateUserBalance-0
-Ÿ2022-10-09 17:56:06.156  INFO 24231 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] Found no committed offset for partition updateUserBalance-0
-Ú2022-10-09 17:56:06.164  INFO 24231 --- [    Test worker] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-group-1-1, groupId=group-1] Resetting offset for partition updateUserBalance-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.59.100:49241 (id: 1 rack: null)], epoch=0}}.
-2022-10-09 17:56:06.195  INFO 24231 --- [    Test worker] kg.proquality.e2e.hooks.CucumberHooks    : Shut down wiremock server
-ó2022-10-09 17:56:06.205  INFO 24231 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [kg.proquality.e2e.config.CucumberSpringConfiguration]: no resource found for suffixes {-context.xml, Context.groovy}.
-Æ2022-10-09 17:56:06.211  INFO 24231 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-Ç2022-10-09 17:56:06.212  INFO 24231 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@22014338, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@22ecee76, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@905e189, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7b31281b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5381acc6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@16db679e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3074d565, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@42775280, org.springframework.test.context.event.EventPublishingTestExecutionListener@1cce2194, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@51645204, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@472d7ab0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3f36d387, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@52999774, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@211e1b51, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@d4a1d38]
-}2022-10-09 17:56:06.219  INFO 24231 --- [    Test worker] kg.proquality.e2e.hooks.CucumberHooks    : Started wiremock server
+¿2022-10-10 16:52:34.829  INFO 59036 --- [    Test worker] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group-1-1, groupId=group-1] Cluster ID: IQaOZhh5RZWzDGLNSilMJQ
+Î2022-10-10 16:52:34.831  INFO 59036 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] Discovered group coordinator 192.168.59.100:49285 (id: 2147483646 rack: null)
+∞2022-10-10 16:52:34.833  INFO 59036 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] (Re-)joining group
+‰2022-10-10 16:52:34.840  INFO 59036 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] Request joining group due to: need to re-join with the given member-id
+∞2022-10-10 16:52:34.840  INFO 59036 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] (Re-)joining group
+∏2022-10-10 16:52:34.849  INFO 59036 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] Successfully joined group with generation Generation{generationId=1, memberId='consumer-group-1-1-21dad6e5-4b79-4e3e-8dac-17ac0ebdefba', protocol='range'}
+≥2022-10-10 16:52:34.849  INFO 59036 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] Finished assignment for group at generation 1: {consumer-group-1-1-21dad6e5-4b79-4e3e-8dac-17ac0ebdefba=Assignment(partitions=[updateUserBalance-0])}
+∂2022-10-10 16:52:34.856  INFO 59036 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] Successfully synced group in generation Generation{generationId=1, memberId='consumer-group-1-1-21dad6e5-4b79-4e3e-8dac-17ac0ebdefba', protocol='range'}
+Î2022-10-10 16:52:34.857  INFO 59036 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] Notifying assignor about the new Assignment(partitions=[updateUserBalance-0])
+”2022-10-10 16:52:34.857  INFO 59036 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] Adding newly assigned partitions: updateUserBalance-0
+Ÿ2022-10-10 16:52:34.861  INFO 59036 --- [    Test worker] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-1-1, groupId=group-1] Found no committed offset for partition updateUserBalance-0
+Ú2022-10-10 16:52:34.870  INFO 59036 --- [    Test worker] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-group-1-1, groupId=group-1] Resetting offset for partition updateUserBalance-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.59.100:49285 (id: 1 rack: null)], epoch=0}}.
+2022-10-10 16:52:34.905  INFO 59036 --- [    Test worker] kg.proquality.e2e.hooks.CucumberHooks    : Shut down wiremock server
+ó2022-10-10 16:52:34.915  INFO 59036 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [kg.proquality.e2e.config.CucumberSpringConfiguration]: no resource found for suffixes {-context.xml, Context.groovy}.
+Æ2022-10-10 16:52:34.919  INFO 59036 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+Å2022-10-10 16:52:34.920  INFO 59036 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@22ecee76, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@905e189, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7b31281b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5381acc6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@16db679e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3074d565, org.springframework.test.context.transaction.TransactionalTestExecutionListener@42775280, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1cce2194, org.springframework.test.context.event.EventPublishingTestExecutionListener@51645204, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@472d7ab0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3f36d387, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@52999774, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@211e1b51, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@d4a1d38, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4694dfd]
+}2022-10-10 16:52:34.930  INFO 59036 --- [    Test worker] kg.proquality.e2e.hooks.CucumberHooks    : Started wiremock server
 Request method:	POST
 ARequest URI:	http://localhost:8085/api/v1/trader/1234/stocks/buy
 Proxy:			<none>
@@ -467,7 +467,10 @@
     "stockId": 7,
     "amount": 5
 }
-Ó2022-10-09 17:56:06.295 ERROR 24231 --- [nio-8085-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is kg.proquality.trader.exception.NeedMoreMoneyException: Not enough money to buy stock. Required sum: 50.000000] with root cause
+∏2022-10-10 16:52:35.033  INFO 59036 --- [      Thread-12] o.e.jetty.server.AbstractConnector       : Stopped NetworkTrafficServerConnector@4494ed08{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+§2022-10-10 16:52:35.037  INFO 59036 --- [      Thread-12] o.e.jetty.server.handler.ContextHandler  : Stopped o.e.j.s.ServletContextHandler@6aca85da{/,null,STOPPED}
+´2022-10-10 16:52:35.038  INFO 59036 --- [      Thread-12] o.e.jetty.server.handler.ContextHandler  : Stopped o.e.j.s.ServletContextHandler@68603829{/__admin,null,STOPPED}
+Ó2022-10-10 16:52:35.054 ERROR 59036 --- [nio-8085-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is kg.proquality.trader.exception.NeedMoreMoneyException: Not enough money to buy stock. Required sum: 50.000000] with root cause
 
 nkg.proquality.trader.exception.NeedMoreMoneyException: Not enough money to buy stock. Required sum: 50.000000
 v	at kg.proquality.trader.service.StockOperationService.checkIfUserHasMoney(StockOperationService.java:79) ~[main/:na]
@@ -524,17 +527,14 @@
 ~	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
 =	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-∏2022-10-09 17:56:06.312  INFO 24231 --- [      Thread-12] o.e.jetty.server.AbstractConnector       : Stopped NetworkTrafficServerConnector@422ab2ff{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
-§2022-10-09 17:56:06.314  INFO 24231 --- [      Thread-12] o.e.jetty.server.handler.ContextHandler  : Stopped o.e.j.s.ServletContextHandler@5b3063b7{/,null,STOPPED}
-´2022-10-09 17:56:06.314  INFO 24231 --- [      Thread-12] o.e.jetty.server.handler.ContextHandler  : Stopped o.e.j.s.ServletContextHandler@392da875{/__admin,null,STOPPED}
 HTTP/1.1 500 
 Content-Type: application/json
 Transfer-Encoding: chunked
-$Date: Sun, 09 Oct 2022 11:56:06 GMT
+$Date: Mon, 10 Oct 2022 10:52:34 GMT
 Connection: close
 
 {
-2    "timestamp": "2022-10-09T11:56:06.309+00:00",
+2    "timestamp": "2022-10-10T10:52:35.067+00:00",
     "status": 500,
 &    "error": "Internal Server Error",
 -    "path": "/api/v1/trader/1234/stocks/buy"
@@ -542,20 +542,20 @@
 HTTP/1.1 500 
 Content-Type: application/json
 Transfer-Encoding: chunked
-$Date: Sun, 09 Oct 2022 11:56:06 GMT
+$Date: Mon, 10 Oct 2022 10:52:34 GMT
 Connection: close
 
 {
-2    "timestamp": "2022-10-09T11:56:06.309+00:00",
+2    "timestamp": "2022-10-10T10:52:35.067+00:00",
     "status": 500,
 &    "error": "Internal Server Error",
 -    "path": "/api/v1/trader/1234/stocks/buy"
 }
-2022-10-09 17:56:06.392  INFO 24231 --- [    Test worker] kg.proquality.e2e.hooks.CucumberHooks    : Shut down wiremock server
-ó2022-10-09 17:56:06.400  INFO 24231 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [kg.proquality.e2e.config.CucumberSpringConfiguration]: no resource found for suffixes {-context.xml, Context.groovy}.
-Æ2022-10-09 17:56:06.402  INFO 24231 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-Å2022-10-09 17:56:06.403  INFO 24231 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@b7461ac, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@49f9575d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@64d347b0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@24ccb18d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@c1dcdb9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@f5d20d8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@714d1844, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@304c8f39, org.springframework.test.context.event.EventPublishingTestExecutionListener@525efc8c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@34634dff, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2df5fc0f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@79948bcf, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5c8ba2ed, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@72a90036, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@703e8fe8]
- 2022-10-09 17:56:06.634  INFO 24231 --- [ntainer#0-0-C-1] k.p.t.consumer.UpdateStockPriceConsumer  : Received updated stock price event: UpdateStockPriceEvent(ticker=ABC, sellPrice=12.1, buyPrice=12.3)
+2022-10-10 16:52:35.172  INFO 59036 --- [    Test worker] kg.proquality.e2e.hooks.CucumberHooks    : Shut down wiremock server
+ó2022-10-10 16:52:35.182  INFO 59036 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [kg.proquality.e2e.config.CucumberSpringConfiguration]: no resource found for suffixes {-context.xml, Context.groovy}.
+Æ2022-10-10 16:52:35.185  INFO 59036 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+Ç2022-10-10 16:52:35.186  INFO 59036 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@49f9575d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@64d347b0, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@24ccb18d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@c1dcdb9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@f5d20d8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@714d1844, org.springframework.test.context.transaction.TransactionalTestExecutionListener@304c8f39, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@525efc8c, org.springframework.test.context.event.EventPublishingTestExecutionListener@34634dff, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2df5fc0f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@79948bcf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5c8ba2ed, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@72a90036, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@703e8fe8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2d29b8d3]
+ 2022-10-10 16:52:35.519  INFO 59036 --- [ntainer#0-0-C-1] k.p.t.consumer.UpdateStockPriceConsumer  : Received updated stock price event: UpdateStockPriceEvent(ticker=ABC, sellPrice=12.1, buyPrice=12.3)
   ç[32m[1m‚îå‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îê[0m
   Ö[32m[1m‚îÇ[0m Share your Cucumber Report with your team at [36m[1m[4mhttps://reports.cucumber.io[0m          [32m[1m‚îÇ[0m
   t[32m[1m‚îÇ[0m Activate publishing with one of the following:                                    [32m[1m‚îÇ[0m
